@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENANTRA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some default styles for better appearance */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+        }
+
+        /* Style for the navigation bar */
+        .navbar {
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style for the logo button */
+        .logo {
+            background: url('https://cdnb.artstation.com/p/assets/images/images/032/796/705/large/adrian-marc-jolua-cyberpunk-red.jpg?1607500612') no-repeat;
+            width: 120px;
+            height: 40px;
+            background-size: cover;
+            display: inline-block;
+            text-indent: -9999px; /* Hide text */
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .overlay-text{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 1;
+         
+        
+
+  
+    color: white;
+
+
+        }
+        .overlay-text p {
+    font-size: 18px;
+
+}
+
+        video{
+            z-index: -1;
+            position:relative;
+            width: 1250px;
+            height: 500px; /* Set a lower z-index to position video behind other content */
+        }
+        /* Add more styles as needed */
+.hello{
+    position: absolute;
+            bottom: 5px;
+            left: 10px;
+            z-index: 1;
+         
+}
+.glow-button {
+
+    background-color: #f3d852;
+    color: #fff;
+    border: none;
+   
+    cursor: pointer;
+    border-radius: 5px;
+    
+    box-shadow: 0 0 20px #f3d852, 0 0 30px #f3d852, 0 0 40px #f3d852;
+    margin-right: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#ausec" class="logo">Logo</a>
+        <a href="#home">Home</a>
+        <a href="#mini-events">Mini-Events</a>
+        <a href="#investiture">Investiture</a>
+        <a href="#about-us">About Us</a>
+
+    </div>
+    <div class="container">
+    
+        <video autoplay muted loop poster="https://cdn.wccftech.com/wp-content/uploads/2023/07/Cyberpunk-2077-Project-AI-1456x728.jpg">
+            <source src="C:\Users\Rakshitha T\Downloads\176963 (720p).mp4" type="video/mp4">
+     
+        </video>
+        <div class="neon-text">
+            ENANTRA
+        </div>
+       <div class="overlay-text">
+        <p>Enantra is an AU courant entrepreneurship event aimed at envisioning<br>
+        and empowering the youth with the spirit of entrepreneurship and the art<br>
+        of corporate play.</p></div>
+        <br>
+        <div class="hello">
+    <button class="glow-button" type="button" value="insta"><img height="10px" width="10px" src="https://w7.pngwing.com/pngs/648/943/png-transparent-instagram-logo-logo-instagram-computer-icons-camera-instagram-logo-text-trademark-magenta-thumbnail.png">Insta</button> 
+    <button class="glow-button" type="button" value="More info"><img height="10px" width="10px" src="data:image/png;base64,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">More info</button>
+    <div>    
+</div>
+
+
+</body>
+</html>

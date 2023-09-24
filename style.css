@@ -1,0 +1,27 @@
+
+.neon-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f3d852;
+    letter-spacing: 10px;
+    font-family: "Arial", sans-serif;
+    position:absolute;
+    bottom: 100px;
+    left: 20px;
+    z-index:1;
+    animation: flicker 1s infinite alternate;
+    
+    
+
+
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 20px #f3d852, 0 0 30px #f3d852, 0 0 40px #f3d852, 0 0 50px #f3d852, 0 0 60px #f3d852, 0 0 70px #f3d852, 0 0 80px #f3d852, 0 0 90px #f3d852;
+    }
+}

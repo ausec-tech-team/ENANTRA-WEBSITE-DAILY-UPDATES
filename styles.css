@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    display: flex; 
+padding: 1.25rem; 
+gap: 1.25rem; 
+align-items: center; 
+
+}
+
+.menu{ 
+    gap: 1.25rem; 
+    color: #FFFFFF;
+
+
+    @media (min-width: 768px) { 
+        display: flex; 
+ }
+
+}
+
+.icon{
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    width: 25%; 
+
+
+@media (min-width: 768px) { 
+  display: none; 
+ }
+
+}
+
+.image{
+    width: 20%;
+    height: auto;
+
+}

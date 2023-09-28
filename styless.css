@@ -1,0 +1,24 @@
+/*//the size of the page and color when we hover..*/
+.fullpage {
+    background-color: rgba(45, 45, 45, 1);
+    width: 70vh;
+    height: 65vh;
+    position: relative;
+  }
+/*the size of guset images*/
+.guests{
+    width: 7vh;
+    height:7vh;
+}
+.divbottom{
+    position: absolute;
+    bottom: 0;
+    padding: 1vh;
+    margin: 1vh;/* images to appear in bottom postion relative and absolute is added then this is to align it */
+}
+span{
+   
+    position: absolute;
+    bottom: 8vh;
+    left: 55vh;
+}

@@ -14,28 +14,28 @@
 .navbar{
     display: flex;
     flex-grow: 1;
-    background-color:#000000;
+    background-color:#ebdf77;
     overflow: hidden;
 }
 
 .navbar div a{
-    width: 20vh;
+    width: 20vw;
     height: 6vh;
     padding: 15px 15px;
     float: left;
     color: white;
+    text-align: center;
     justify-content: center;
     align-content: space-evenly;
     text-decoration: none;
 }
 .navbar a:hover{
-    background-color: #eeede8;
+    background-color: #ffe97c;
     color: black;
 }
 
 .video-preview div{
     color: #eeede8;
-    padding: 10px 10px;
 }
 
 .video-preview .video{
@@ -50,16 +50,17 @@
     position:absolute;
     left: 100%;
     display:flex;
-    animation: slide 5s infinite;
+    animation: slide 5s linear infinite;
 }
+
 @keyframes slide{
     0%{
         left: 100%;
     }
-    33.333%{
+    25%{
         left: 0;
     }
-    66.666%{
+    75%{
         left: 0;
     }
     100%{
@@ -90,18 +91,10 @@
     grid-template-columns: var(--row) var(--row) var(--row) var(--row) var(--row) var(--row);
     column-gap: var(--space);
     row-gap: var(--space);
-    transition: transform 0.5s ease;
 
 }
 .event{
-    position:absolute;
-    background-color: #0f075a;
-    transition: transform 0.5s ease;
-    
-}
-
-.carousel div:hover{
-    transform-origin:0px center;
+    background-color: #021a3a;
 }
 .button-container{
     display:flex;
@@ -120,7 +113,7 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 .instagram-button:hover{
     color:#eeede8;

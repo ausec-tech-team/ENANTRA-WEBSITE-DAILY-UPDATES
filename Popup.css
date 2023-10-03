@@ -1,0 +1,316 @@
+/* Popup.css */
+
+
+.popup-container {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+
+    width: 55%;
+    height: 90%;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: black;
+    text-decoration-color: antiquewhite;
+    overflow:scroll;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+
+  /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(112, 105, 105);
+  border-radius: 5px;
+}
+  .popup .event-title {
+    text-align: center;
+    margin-top: 0px;
+    
+    background-color:blue;
+    color: greenyellow;
+    border-radius: 20px;
+    width: 400px;
+    margin-left: 25%;
+  }
+  .popup .event-desc{
+    text-align: justify;
+    font-weight: normal;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .popup .header-desc1{
+    text-align: right;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-right: 6%;
+    font-size: medium;
+    
+  }
+
+  
+  .popup .header-desc0{
+    text-align: right;
+    margin-top: -12%;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    font-size: medium;
+  }
+
+  .popup .contact-us {
+    background-color: black;
+    margin-left: 10%;
+    color: white;
+    font-weight: bold;
+  }
+
+
+  .popup .contact-img {
+    width: 3.6%;
+    margin-left: 10%;
+    margin-top: -2%;
+  }
+
+  .popup .contact{
+    background-color: black;
+    margin-left: 15%;
+    margin-top: -4%;
+    color: white;
+    font-weight: normal;
+  }
+
+  
+  .popup .header-desc2{
+    text-align: right;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-right: 7%;
+    font-size: medium;
+    
+  }
+
+
+  
+  .popup .header-desc3{
+    text-align: right;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-right: 1.2%;
+    font-size: medium;   
+  }
+
+  
+  .popup .header-desc4{
+    text-align: right;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-right: 6%;    
+    font-size: medium;
+  }
+
+  
+  .popup .header-desc5{
+    text-align: right;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-right: 10%;
+    font-size: medium;
+  }
+
+  .popup .container {
+    background-color: bka;
+  }
+
+  .popup .mute-btn {
+    position: relative;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-bottom: -80%;
+    height: 5%;
+    font-size: x-large;
+    background-color: black;
+    transform: translate(30%, -690%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 5px;
+    width: 16%;
+    text-align: end;
+
+  }
+  .popup .close-btn {
+    
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    transform: translate(1645% ,-2185%);
+    -ms-transform: translate(-50%, -50%);
+    font-weight: normal;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  .popup .guest-img {
+    width: 13%;
+    margin-top: -1112%;
+    border-radius: 50%;
+    margin-right: 5%;
+    margin-left: 2%;
+    padding: 0;
+    
+    border-color: black;
+    
+    
+  }
+
+  .popup .inline {
+    background-color: black;
+    display: inline-block;
+  }
+
+  .popup .about-event {
+    text-align: center;
+    margin-left: 20%;
+
+    background-color: green;
+    color: greenyellow;
+    border-width: 10px;
+    border-radius: 10px;
+    width: 180px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px;
+  }
+
+  .popup .img-container {
+    background-color: black;
+
+  }
+
+  .overlay {
+    
+    top: -40%; /* Adjust as needed */
+    left: 0%; /* Adjust as needed */
+    width: 102%; /* Adjust as needed */
+    height: 40%; /* Adjust as needed */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    position: relative;
+    padding: 0%;
+    margin-bottom: -21%;
+    
+  }
+  
+  .popup .events-img {
+    width: 106%;
+    overflow: auto;
+    height: 80%;
+    display: block;
+    
+    margin-top: -2%;
+    margin-left: -5%;
+    margin-right: -5%;
+    filter: blur(0px);
+    overflow: hidden;
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+
+  .events-img:before {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  
+
+  
+  /* Apply backdrop blur effect */
+  .popup-container {
+    backdrop-filter: blur(5px);
+  }
+
+  .popup .register-button {
+    position: relative;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-bottom: -80%;
+    height: 5%;
+    font-size: x-large;
+    background-color: rgba(32, 181, 32, 0.533);
+    transform: translate(30%, -690%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 5px;
+    width: 16%;
+    text-align: end;
+    
+  }
+
+  .popup .contact-btn {
+    position: relative;
+    margin-top: -50%;
+    margin-left: 2%;
+    height: 5%;
+    margin-bottom: -311%;
+    font-size: x-large;
+    background-color: rgba(141, 32, 181, 0.533);
+    transform: translate(30%, -690%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 5px;
+    width: 20%;
+    text-align: end;
+  }
+
+  .popup #contact-section {
+    background-color: black;
+    text-decoration: none;
+  }
+
+  .popup .contact-link {
+    background-color: rgba(141, 32, 181, 0.533);
+    text-decoration: none;
+    color: white;
+  }
+  
+
+  
+  .popup .reg-link {
+    background-color: rgba(32, 181, 32, 0.533);
+    text-decoration: none;
+    color: white;
+  }
+  .popup .link-event {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    
+  }

@@ -16,7 +16,7 @@
   }
   
   .popup {
-
+    position: relative;
     width: 55%;
     height: 90%;
     padding-right: 10px;
@@ -193,6 +193,26 @@
     
   }
 
+  .popup .guest-name{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    display: inline-block;
+    padding-top: 5%;
+    margin-bottom: 0%;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+  }
+
+  .guests{
+    background-color: black;
+  }
+
+  .guest-names{
+    background-color: black;
+  }
+
   .popup .inline {
     background-color: black;
     display: inline-block;
@@ -313,4 +333,27 @@
     color: white;
     text-decoration: none;
     
+  }
+
+  button.mute {
+    color: white;
+    background-color: rgb(45, 45, 45);
+    height: 2.3rem;
+    width: 2.3rem;
+    border: solid 0.1rem white;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotateY(180deg);
+    opacity: 100%;
+    box-shadow: 0px 0px 20px rgb(177, 177, 177);
+    position: absolute;
+    top: 65%;
+    right: 2%;
+  }
+  
+  .vol{
+    color: white;
+    background-color: rgb(45, 45, 45);
+    font-size: 0.8rem;
+    text-shadow: 0rem 0rem 1rem #ffffcc;
   }

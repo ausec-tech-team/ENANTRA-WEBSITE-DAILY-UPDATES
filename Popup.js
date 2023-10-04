@@ -1,16 +1,24 @@
 // Popup.js
-import React from 'react';
+import React, { useState } from 'react';
 import './Popup.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
+import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
 import iot from './iot.webp';
 import elon from './elon-musk.jpeg';
 import mark from './mark-zuckerberg.jpg';
 import bill from './bill-gates.jpg';
-import mute from './mute-btn.png';
-import info from './info-icon.png';
+
+// import info from './info-icon.png';
 import contact from './contact.jpg';
 
 
 const Popup = ({ onClose }) => {
+
+  const [isMute, setIsMute] = useState(false);
+  const mute = () => {
+    setIsMute(!isMute);
+  }
 
  /* function redirect() {
     window.location.href = "#contact-section"
@@ -20,23 +28,31 @@ const Popup = ({ onClose }) => {
       <div className="popup">
       
         
-      
-        <img src={iot} className="events-img" />
         
-        <div className='overlay'></div>
-  
+        <img src={iot} className="events-img" />
+
         <button className='register-button'><a href = "https://unstop.com/conferences/6dt-6-degree-talks-enantra-entrepreneurship-mantra-anna-university-au-chennai-488810" className='reg-link'>Register</a></button>
 
         <button className='contact-btn'><a href='#contact-section' className='contact-link'>Contact us</a></button>
-
-
         
+        <button onClick={mute} className='mute'>
+              {!isMute?<FontAwesomeIcon icon={faVolumeHigh} className='vol'/>:<FontAwesomeIcon icon={faVolumeXmark} className='vol'/>}
+        </button>
+
         <button className='close-btn' onClick={onClose}>X </button>
         
         <div className='inline'>
-              <img src = {elon} className='guest-img'></img>   
+            <div className='guests'>
+              <img src = {elon} className='guest-img'></img>
               <img src = {mark} className='guest-img'></img>
               <img src = {bill} className='guest-img'></img>
+            </div>
+            <div className='guest-names'>
+              <p className='guest-name'>Elon</p>
+              <p className='guest-name'>Mark</p>
+              <p className='guest-name'>Bill</p>
+            </div>
+          
           
               <h3 className='header-desc0'>Event Type:    Venue/Offline Mode</h3>
                   
